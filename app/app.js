@@ -11,6 +11,10 @@ var app = new Vue({
       ref: '#registry'
     },
     {
+      label: 'Gallery',
+      ref: '#gallery'
+    },
+    {
       label: 'RSVP',
       ref: ''
     }]
