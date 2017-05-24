@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/dist/bundle.css">
+  <title>Bonnie and James Forever</title>
+</head>
+
+<body>
+  <main id="main">
+    <nav>
+      <ul>
+        <navbar v-for="item in navList" v-bind:item="item">
+        </navbar>
+      </ul>
+    </nav>
+  </main>
+
+
+
+
+  <!-- Vue -->
+  <script src="https://unpkg.com/vue"></script>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAd1DT-wDkSq5WRPppGNxQH4m_3IvtD6fk",
+      authDomain: "bonnie-and-james.firebaseapp.com",
+      databaseURL: "https://bonnie-and-james.firebaseio.com",
+      projectId: "bonnie-and-james",
+      storageBucket: "bonnie-and-james.appspot.com",
+      messagingSenderId: "818068198175"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <script src="/dist/bundle.js" charset="utf-8"></script>
+</body>
+
+</html>

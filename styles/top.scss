@@ -1,0 +1,18 @@
+@import "./main";
+
+nav {
+  ul {
+    float: right;
+    display: flex;
+    li {
+      padding: 1rem 2rem;
+      &:hover {
+        background: $secondary;
+      }
+      &.active {
+        text-decoration: underline;
+        font-weight: bold;
+      }
+    }
+  }
+}
