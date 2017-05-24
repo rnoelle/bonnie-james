@@ -1,5 +1,16 @@
 'use strict';
 
+Vue.component('gallery', {
+  template: '\n    <section id="gallery">\n      <slider>\n        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/rock.jpg">\n        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/grooves.jpg">\n        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/arch.jpg">\n        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/sunset.jpg">\n      </slider>\n      \n    <p>\n    Vue.js implements WebComponent-compliant &lt;content&gt; insertion point mechanism.\n    </p>\n    <p>\n    Markup and CSS borrowed from <a href="http://css-tricks.com/modular-future-web-components/" target="_blank">CSS Tricks</a>, which is in turn adapted from <a href="http://csscience.com/responsiveslidercss3/" target="_blank">CSScience</a>. Images courtesy of <a href="http://www.flickr.com/photos/eliya" target="_blank">Eliya Selhub</a>\n    </p>\n  </section>\n  '
+});
+'use strict';
+
+Vue.component('slider', {
+  template: '#img-slider-template',
+  replace: true
+});
+'use strict';
+
 Vue.component('navbar', {
   props: ['item'],
   template: '<a :href="anchor"><li>{{item.label}}</li></a>',

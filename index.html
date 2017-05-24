@@ -10,7 +10,9 @@
 <body>
   <main id="main">
     <nav>
-      <a id="logo" href="#top"><li>Bonnie and James</li></a>
+      <a id="logo" href="#top">
+        <li>Bonnie and James</li>
+      </a>
       <ul>
         <navbar v-for="item in navList" v-bind:item="item">
         </navbar>
@@ -19,6 +21,11 @@
     <top></top>
     <wedding></wedding>
     <registry></registry>
+    <gallery></gallery>
+
+
+
+
   </main>
 
 
@@ -26,6 +33,39 @@
 
   <!-- Vue -->
   <script src="https://unpkg.com/vue"></script>
+  <!-- Slider -->
+  <script type="text/x-template" id="img-slider-template">
+    <div id="slider">
+      <input checked="" type="radio" name="slider" id="slide1" selected="false">
+      <input type="radio" name="slider" id="slide2" selected="false">
+      <input type="radio" name="slider" id="slide3" selected="false">
+      <input type="radio" name="slider" id="slide4" selected="false">
+      <div id="slides">
+        <div id="overflow">
+          <div class="inner">
+            <article>
+              <content select="img:nth-of-type(1)"></content>
+            </article>
+            <article>
+              <content select="img:nth-of-type(2)"></content>
+            </article>
+            <article>
+              <content select="img:nth-of-type(3)"></content>
+            </article>
+            <article>
+              <content select="img:nth-of-type(4)"></content>
+            </article>
+          </div>
+          <!-- .inner -->
+        </div>
+        <!-- #overflow -->
+      </div>
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+    </div>
+  </script>
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
   <!-- Firebase -->
