@@ -1,0 +1,23 @@
+#registry {
+  clear: both;
+  height: 50vh;
+  width: 100vw;
+  background: #f5f2f2;
+  padding: 1.5rem;
+  div {
+    display: flex;
+    width: 60%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 3rem;
+    a {
+      margin: 6rem;
+      img {
+        width: 100%;
+      }
+      &:hover {
+        opacity: .85;
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 Vue.component('wedding', {
   template: `
-    <section id="wedding">
+    <section id="wedding" class="clearfix">
         <div class="image"></div>
         <div class="left">
           <h2>The Wedding</h2>

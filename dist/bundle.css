@@ -54,10 +54,32 @@ h1, h2, h3, h4, h5, h6, li, a {
 p {
   font-family: "Open Sans", sans-serif; }
 
+h2 {
+  font-size: 3.5rem; }
+
 .clearfix::after {
   content: "";
   display: table;
   clear: both; }
+
+#registry {
+  clear: both;
+  height: 50vh;
+  width: 100vw;
+  background: #f5f2f2;
+  padding: 1.5rem; }
+  #registry div {
+    display: flex;
+    width: 60%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 3rem; }
+    #registry div a {
+      margin: 6rem; }
+      #registry div a img {
+        width: 100%; }
+      #registry div a:hover {
+        opacity: .85; }
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,400,700|Open+Sans");
 h1, h2, h3, h5, h5, h6, li, a, p, input, textarea, button {
@@ -68,6 +90,9 @@ h1, h2, h3, h4, h5, h6, li, a {
 
 p {
   font-family: "Open Sans", sans-serif; }
+
+h2 {
+  font-size: 3.5rem; }
 
 .clearfix::after {
   content: "";
@@ -113,7 +138,6 @@ nav {
   background: url("../assets/bandj-head-on-shoulder.jpg");
   background-size: cover;
   height: 100vh;
-  width: 100vw;
   position: relative; }
   .jumbotron h1 {
     color: white;
@@ -145,7 +169,6 @@ nav {
     width: 30vw; }
 
 #wedding h2 {
-  font-size: 3.5rem;
   margin-bottom: 1rem; }
 
 #wedding .image {

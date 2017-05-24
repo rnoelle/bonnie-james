@@ -11,13 +11,18 @@ Vue.component('navbar', {
 });
 'use strict';
 
+Vue.component('registry', {
+  template: '\n    <section id="registry">\n      <h2>The couple is registered at:</h2>\n      <div>\n        <a href=\'https://www.amazon.com/wedding/james-scott-bonnie-reid-provo-june-2017/registry/251XPRVK8MRVF\' target="_blank">\n          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Amazon.com-Logo.svg/2000px-Amazon.com-Logo.svg.png">\n        </a>\n        <a href="https://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&inventoryCallEnabled=true&registryId=544605754&pwsurl=">\n          <img src="https://d3ei0t9fwgqcl.cloudfront.net/2016/05/27/02/21/17/97e5b886-a115-4f59-8fdd-d61fec749a1f/4214388.png">\n        </a>\n      </div>\n    </section>\n  '
+});
+'use strict';
+
 Vue.component('top', {
   template: '\n    <div id="top" class="jumbotron">\n      <h1>BONNIE and JAMES</h1>\n    </div>\n  '
 });
 'use strict';
 
 Vue.component('wedding', {
-  template: '\n    <section id="wedding">\n        <div class="image"></div>\n        <div class="left">\n          <h2>The Wedding</h2>\n          <h4>The marriage will take place <em>30 June 2017</em>.</h4>\n          <h4>A reception will be held in their honor that night:</h4>\n          <h3>The Manderley Reception Center</h3>\n          <h3>1675 North Freedom Boulevard #10G</h3>\n          <h3><em>6-8pm</em></h3>\n          <h5> In consideration of family allergies, please do not wear scented products, such as lotions, cologne, perfume, or essential oils. Thank you!</h5>\n          <aside>\n            <h3><em>6-7pm</em> the couple will greet their guests.</h3>\n            <h3><em>7pm</em> the dancing will begin.</h3>\n            <h3><em>8pm</em> the couple will make their exit!</h3>\n          </aside>\n      </div>\n    </section>\n  '
+  template: '\n    <section id="wedding" class="clearfix">\n        <div class="image"></div>\n        <div class="left">\n          <h2>The Wedding</h2>\n          <h4>The marriage will take place <em>30 June 2017</em>.</h4>\n          <h4>A reception will be held in their honor that night:</h4>\n          <h3>The Manderley Reception Center</h3>\n          <h3>1675 North Freedom Boulevard #10G</h3>\n          <h3><em>6-8pm</em></h3>\n          <h5> In consideration of family allergies, please do not wear scented products, such as lotions, cologne, perfume, or essential oils. Thank you!</h5>\n          <aside>\n            <h3><em>6-7pm</em> the couple will greet their guests.</h3>\n            <h3><em>7pm</em> the dancing will begin.</h3>\n            <h3><em>8pm</em> the couple will make their exit!</h3>\n          </aside>\n      </div>\n    </section>\n  '
 });
 // $(document).ready(function () {
 //     $(document).on("scroll", onScroll);
