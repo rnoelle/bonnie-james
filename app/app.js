@@ -1,10 +1,7 @@
 var app = new Vue({
   el: '#main',
   data: {
-    navList: [{
-      label: 'B&J',
-      ref: '#bandj'
-    },
+    navList: [
     {
       label: 'Wedding',
       ref: '#wedding'

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,700|Open+Sans');
 
 $primary: #2AABE2;
 $secondary: #f2f495;
@@ -16,4 +16,10 @@ h1, h2, h3, h4, h5, h6, li, a {
 
 p {
   font-family: $p-font;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }

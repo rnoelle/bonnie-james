@@ -2,12 +2,17 @@
 
 Vue.component('navbar', {
   props: ['item'],
-  template: '<li><a :href="anchor">{{item.label}}</a></li>',
+  template: '<a :href="anchor"><li>{{item.label}}</li></a>',
   data: function data() {
     return {
       anchor: this.item.ref
     };
   }
+});
+'use strict';
+
+Vue.component('top', {
+  template: '\n    <div id="top" class="jumbotron">\n      <h1>BONNIE and JAMES</h1>\n    </div>\n  '
 });
 'use strict';
 
@@ -55,9 +60,6 @@ var app = new Vue({
   el: '#main',
   data: {
     navList: [{
-      label: 'B&J',
-      ref: '#bandj'
-    }, {
       label: 'Wedding',
       ref: '#wedding'
     }, {

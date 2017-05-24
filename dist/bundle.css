@@ -44,7 +44,7 @@ table {
 a {
   text-decoration: none; }
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,400,700|Open+Sans");
 h1, h2, h3, h5, h5, h6, li, a, p, input, textarea, button {
   color: #3c3c3c; }
 
@@ -54,7 +54,12 @@ h1, h2, h3, h4, h5, h6, li, a {
 p {
   font-family: "Open Sans", sans-serif; }
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans");
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,400,700|Open+Sans");
 h1, h2, h3, h5, h5, h6, li, a, p, input, textarea, button {
   color: #3c3c3c; }
 
@@ -64,13 +69,59 @@ h1, h2, h3, h4, h5, h6, li, a {
 p {
   font-family: "Open Sans", sans-serif; }
 
-nav ul {
-  float: right;
-  display: flex; }
-  nav ul li {
-    padding: 1rem 2rem; }
-    nav ul li:hover {
-      background: #f2f495; }
-    nav ul li.active {
-      text-decoration: underline;
-      font-weight: bold; }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+nav {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background: rgba(183, 183, 183, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  nav li {
+    list-style: none; }
+  nav #logo {
+    font-size: 2rem; }
+    nav #logo li {
+      color: #26204e;
+      padding-left: 1rem; }
+  nav ul {
+    display: flex;
+    height: 100%; }
+    nav ul a {
+      font-size: 1.5rem;
+      height: 100%;
+      padding: 1rem 2rem; }
+      nav ul a li {
+        height: 100%;
+        color: white; }
+      nav ul a:hover {
+        background: #f2f495; }
+      nav ul a.active {
+        text-decoration: underline;
+        font-weight: bold; }
+  nav.opaque {
+    background: #2AABE2; }
+
+.jumbotron {
+  background: url("../assets/bandj-head-on-shoulder.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative; }
+  .jumbotron h1 {
+    color: white;
+    position: absolute;
+    top: 25vh;
+    right: 10vw;
+    font-size: 5rem;
+    width: 22vw;
+    text-align: right;
+    font-weight: 100;
+    font-family: 'Montserrat'; }

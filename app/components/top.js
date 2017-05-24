@@ -1,7 +1,7 @@
 Vue.component('top', {
   template:`
-    <div class="jumbotron">
-      <h1>Bonnie and James</h1>
+    <div id="top" class="jumbotron">
+      <h1>BONNIE and JAMES</h1>
     </div>
   `
 })

@@ -1,6 +1,6 @@
 Vue.component('navbar', {
   props: ['item'],
-  template: '<li><a :href="anchor">{{item.label}}</a></li>',
+  template: '<a :href="anchor"><li>{{item.label}}</li></a>',
   data: function() {
     return {
       anchor: this.item.ref
