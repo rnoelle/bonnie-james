@@ -62,12 +62,42 @@ h2 {
   display: table;
   clear: both; }
 
+footer {
+  width: 100vw;
+  height: 20vh;
+  background: #3c3c3c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  float: right; }
+  footer p {
+    color: #bebebe; }
+
 #gallery {
   clear: both;
   padding: 3rem;
   display: block; }
   #gallery img {
-    height: 30vh; }
+    height: 30vh;
+    cursor: pointer; }
+    #gallery img:hover {
+      opacity: .85; }
+  #gallery .lightboxes {
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    min-width: 400px;
+    flex-wrap: wrap; }
+  #gallery h2 {
+    transform: rotate(90deg);
+    transform-origin: left top 0;
+    float: left;
+    margin-left: 7rem;
+    margin-right: -4rem;
+    font-size: 8rem; }
+  #gallery em {
+    font-weight: bold; }
 
 #registry {
   float: right;
@@ -76,7 +106,8 @@ h2 {
   background: #f5f2f2;
   padding: 1.5rem; }
   #registry h2 {
-    text-align: left; }
+    text-align: left;
+    margin-left: 5vw; }
   #registry div {
     display: flex;
     width: 60%;

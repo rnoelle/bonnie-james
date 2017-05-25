@@ -4,5 +4,27 @@
   display: block;
   img {
     height: 30vh;
+    cursor: pointer;
+    &:hover {
+      opacity: .85;
+    }
+  }
+  .lightboxes {
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    min-width: 400px;
+    flex-wrap: wrap;
+  }
+  h2 {
+    transform: rotate(90deg);
+	  transform-origin: left top 0;
+    float: left;
+    margin-left: 7rem;
+    margin-right: -4rem;
+    font-size: 8rem;
+  }
+  em {
+    font-weight: bold;
   }
 }

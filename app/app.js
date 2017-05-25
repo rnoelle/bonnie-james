@@ -14,7 +14,7 @@ var app = new Vue({
           ref: '#gallery'
         }, {
           label: 'RSVP',
-          ref: ''
+          ref: 'https://docs.google.com/forms/d/e/1FAIpQLSdLouG4QnhmTchRfqF7xWUO6uvVPrBqCOdCkKd3JDrI_In9hQ/viewform?usp=sf_link'
         }
       ]
     }

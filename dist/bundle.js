@@ -1,9 +1,14 @@
+'use strict';
+
+Vue.component('footer-elem', {
+  template: '\n    <footer>\n      <p>&copy; Noelle Reid</p>\n      <p>All Rights Reserved</p>\n    </footer>\n  '
+});
 "use strict";
 
 Vue.component("Lightbox", VueLightbox.VueLightbox);
 
 Vue.component('gallery', {
-  template: "\n    <section id=\"gallery\">\n      <lightbox src=\"../assets/bandj2.jpg\" caption=\"this is pic caption\" album=\"albumA\">\n        <img src=\"../assets/bandj2.jpg\">\n      </lightbox>\n      <lightbox src=\"../assets/bandj1.jpg\" caption=\"this is pic caption\" album=\"albumA\"></lightbox>\n      <lightbox src=\"../assets/bandj3.jpg\" caption=\"this is pic caption\" album=\"albumB\"></lightbox>\n\n    </section>\n  "
+  template: "\n    <section id=\"gallery\">\n      <h2>Gallery</h2>\n      <div class=\"lightboxes\">\n        <lightbox src=\"../assets/bandj2.jpg\" caption=\"this is pic caption\" album=\"bandj\">\n          <img src=\"../assets/bandj2.jpg\">\n        </lightbox>\n        <lightbox src=\"../assets/bandj1.jpg\" caption=\"this is pic caption\" album=\"bandj\">\n          <img src=\"../assets/bandj1.jpg\">\n        </lightbox>\n        <lightbox src=\"../assets/bandj3.jpg\" caption=\"this is pic caption\" album=\"bandj\">\n          <img src=\"../assets/bandj3.jpg\">\n        </lightbox>\n        <lightbox src=\"../assets/bandj4.jpg\" caption=\"this is pic caption\" album=\"bandj\">\n          <img src=\"../assets/bandj4.jpg\">\n        </lightbox>\n        <lightbox src=\"../assets/bandj5.jpg\" caption=\"this is pic caption\" album=\"bandj\">\n          <img src=\"../assets/bandj5.jpg\">\n        </lightbox>\n        <lightbox src=\"../assets/bandj6.jpg\" caption=\"this is pic caption\" album=\"bandj\">\n          <img src=\"../assets/bandj6.jpg\">\n        </lightbox>\n        <lightbox src=\"../assets/bandj7.jpg\" caption=\"this is pic caption\" album=\"bandj\">\n          <img src=\"../assets/bandj7.jpg\">\n        </lightbox>\n        <lightbox src=\"../assets/bandj8.jpg\" caption=\"this is pic caption\" album=\"bandj\">\n          <img src=\"../assets/bandj8.jpg\">\n        </lightbox>\n      </div>\n      <h3>Photos by <em><a href=\" https://www.facebook.com/jennsinesphotos/\" target=\"_blank\">Jennsine Erickson</a></em></h3>\n    </section>\n  "
 });
 'use strict';
 
@@ -88,7 +93,7 @@ var app = new Vue({
         ref: '#gallery'
       }, {
         label: 'RSVP',
-        ref: ''
+        ref: 'https://docs.google.com/forms/d/e/1FAIpQLSdLouG4QnhmTchRfqF7xWUO6uvVPrBqCOdCkKd3JDrI_In9hQ/viewform?usp=sf_link'
       }]
     };
   }
