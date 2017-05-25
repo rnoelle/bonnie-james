@@ -1,8 +1,5 @@
 var app = new Vue({
   el: '#main',
-  components: {
-    vueImages: vueImages.default
-  },
   data: function() {
     return {
       navList: [
@@ -18,17 +15,6 @@ var app = new Vue({
         }, {
           label: 'RSVP',
           ref: ''
-        }
-      ],
-      images: [
-        {
-          imageUrl: '../assets/bandj1'
-        }, {
-          imageUrl: '../assets/bandj2'
-        }, {
-          imageUrl: '../assets/bandj3'
-        }, {
-          imageUrl: '../assets/bandj4'
         }
       ]
     }

@@ -1,7 +1,9 @@
-'use strict';
+"use strict";
+
+Vue.component("Lightbox", VueLightbox.VueLightbox);
 
 Vue.component('gallery', {
-  template: '\n  '
+  template: "\n    <section id=\"gallery\">\n      <lightbox src=\"../assets/bandj2.jpg\" caption=\"this is pic caption\" album=\"albumA\">\n        <img src=\"../assets/bandj2.jpg\">\n      </lightbox>\n      <lightbox src=\"../assets/bandj1.jpg\" caption=\"this is pic caption\" album=\"albumA\"></lightbox>\n      <lightbox src=\"../assets/bandj3.jpg\" caption=\"this is pic caption\" album=\"albumB\"></lightbox>\n\n    </section>\n  "
 });
 'use strict';
 
@@ -73,9 +75,6 @@ Vue.component('wedding', {
 
 var app = new Vue({
   el: '#main',
-  components: {
-    vueImages: vueImages.default
-  },
   data: function data() {
     return {
       navList: [{
@@ -90,50 +89,7 @@ var app = new Vue({
       }, {
         label: 'RSVP',
         ref: ''
-      }],
-      images: [{
-        imageUrl: '../assets/bandj1'
-      }, {
-        imageUrl: '../assets/bandj2'
-      }, {
-        imageUrl: '../assets/bandj3'
-      }, {
-        imageUrl: '../assets/bandj4'
       }]
     };
-  }
-});
-'use strict';
-
-new Vue({
-  el: '#gallery',
-  data: function data() {
-    return {
-      images: [{
-        imageUrl: '../assets/bandj1.jpg',
-        caption: '<a href="#">Photo by 1</a>'
-      }, {
-        imageUrl: '../assets/bandj2.jpg',
-        caption: 'Photo by 2'
-      }, {
-        imageUrl: '../assets/bandj3.jpg',
-        caption: 'Photo by 3'
-      }, {
-        imageUrl: '../assets/bandj4.jpg',
-        caption: 'Photo by 4'
-      }],
-      modalclose: true,
-      keyinput: true,
-      mousescroll: true,
-      showclosebutton: true,
-      showcaption: true,
-      imagecountseparator: 'of',
-      showimagecount: true,
-      showthumbnails: true
-    };
-  },
-
-  components: {
-    vueImages: vueImages.default
   }
 });
