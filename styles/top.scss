@@ -11,6 +11,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: all 500ms;
   li {
     list-style: none;
   }
@@ -31,13 +32,16 @@ nav {
       li {
         height: 100%;
         color: white;
+        &.active {
+          text-decoration: underline;
+        }
       }
       &:hover {
         background: $secondary;
       }
       &.active {
         text-decoration: underline;
-        font-weight: bold;
+        text-decoration-color: white;
       }
     }
   }

@@ -148,7 +148,8 @@ nav {
   background: rgba(183, 183, 183, 0.6);
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  transition: all 500ms; }
   nav li {
     list-style: none; }
   nav #logo {
@@ -166,11 +167,13 @@ nav {
       nav ul a li {
         height: 100%;
         color: white; }
+        nav ul a li.active {
+          text-decoration: underline; }
       nav ul a:hover {
         background: #f2f495; }
       nav ul a.active {
         text-decoration: underline;
-        font-weight: bold; }
+        text-decoration-color: white; }
   nav.opaque {
     background: #2AABE2; }
 
