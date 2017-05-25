@@ -1,13 +1,7 @@
 'use strict';
 
 Vue.component('gallery', {
-  template: '\n    <section id="gallery">\n      <slider>\n        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/rock.jpg">\n        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/grooves.jpg">\n        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/arch.jpg">\n        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/sunset.jpg">\n      </slider>\n      \n    <p>\n    Vue.js implements WebComponent-compliant &lt;content&gt; insertion point mechanism.\n    </p>\n    <p>\n    Markup and CSS borrowed from <a href="http://css-tricks.com/modular-future-web-components/" target="_blank">CSS Tricks</a>, which is in turn adapted from <a href="http://csscience.com/responsiveslidercss3/" target="_blank">CSScience</a>. Images courtesy of <a href="http://www.flickr.com/photos/eliya" target="_blank">Eliya Selhub</a>\n    </p>\n  </section>\n  '
-});
-'use strict';
-
-Vue.component('slider', {
-  template: '#img-slider-template',
-  replace: true
+  template: '\n  '
 });
 'use strict';
 
@@ -79,19 +73,67 @@ Vue.component('wedding', {
 
 var app = new Vue({
   el: '#main',
-  data: {
-    navList: [{
-      label: 'Wedding',
-      ref: '#wedding'
-    }, {
-      label: 'Registry',
-      ref: '#registry'
-    }, {
-      label: 'Gallery',
-      ref: '#gallery'
-    }, {
-      label: 'RSVP',
-      ref: ''
-    }]
+  components: {
+    vueImages: vueImages.default
+  },
+  data: function data() {
+    return {
+      navList: [{
+        label: 'Wedding',
+        ref: '#wedding'
+      }, {
+        label: 'Registry',
+        ref: '#registry'
+      }, {
+        label: 'Gallery',
+        ref: '#gallery'
+      }, {
+        label: 'RSVP',
+        ref: ''
+      }],
+      images: [{
+        imageUrl: '../assets/bandj1'
+      }, {
+        imageUrl: '../assets/bandj2'
+      }, {
+        imageUrl: '../assets/bandj3'
+      }, {
+        imageUrl: '../assets/bandj4'
+      }]
+    };
+  }
+});
+'use strict';
+
+new Vue({
+  el: '#gallery',
+  data: function data() {
+    return {
+      images: [{
+        imageUrl: '../assets/bandj1.jpg',
+        caption: '<a href="#">Photo by 1</a>'
+      }, {
+        imageUrl: '../assets/bandj2.jpg',
+        caption: 'Photo by 2'
+      }, {
+        imageUrl: '../assets/bandj3.jpg',
+        caption: 'Photo by 3'
+      }, {
+        imageUrl: '../assets/bandj4.jpg',
+        caption: 'Photo by 4'
+      }],
+      modalclose: true,
+      keyinput: true,
+      mousescroll: true,
+      showclosebutton: true,
+      showcaption: true,
+      imagecountseparator: 'of',
+      showimagecount: true,
+      showthumbnails: true
+    };
+  },
+
+  components: {
+    vueImages: vueImages.default
   }
 });
