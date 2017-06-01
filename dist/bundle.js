@@ -24,7 +24,7 @@ Vue.component('navbar', {
 'use strict';
 
 Vue.component('registry', {
-  template: '\n    <section id="registry">\n      <h2>The couple is registered at:</h2>\n      <div>\n        <a href=\'https://www.amazon.com/wedding/james-scott-bonnie-reid-provo-june-2017/registry/251XPRVK8MRVF\' target="_blank">\n          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Amazon.com-Logo.svg/2000px-Amazon.com-Logo.svg.png">\n        </a>\n        <a href="https://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&inventoryCallEnabled=true&registryId=544605754&pwsurl=">\n          <img src="https://d3ei0t9fwgqcl.cloudfront.net/2016/05/27/02/21/17/97e5b886-a115-4f59-8fdd-d61fec749a1f/4214388.png">\n        </a>\n      </div>\n    </section>\n  '
+  template: '\n    <section id="registry">\n      <h2>The couple is registered at:</h2>\n      <div>\n        <a href=\'https://www.amazon.com/wedding/james-scott-bonnie-reid-provo-june-2017/registry/251XPRVK8MRVF\' target="_blank">\n          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Amazon.com-Logo.svg/2000px-Amazon.com-Logo.svg.png">\n        </a>\n        <a href="https://www.honeyfund.com/wedding/bonnieandjamesforever">\n          <img src="https://www.capolyeverafter.com/wp-content/uploads/2016/10/logo-honeyfund.png">\n        The couple are in need of a washer and dryer - you can contribute here!\n        </a>\n      </div>\n    </section>\n  '
 });
 'use strict';
 
