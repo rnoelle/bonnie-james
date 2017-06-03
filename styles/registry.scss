@@ -10,14 +10,16 @@
   }
   div {
     display: flex;
-    width: 60%;
+    width: 80%;
     max-width: 1000px;
     margin: auto;
     margin-top: 3rem;
     a {
       margin: 3rem;
+      flex-grow: 1;
       img {
         width: 100%;
+        min-width: 300px;
       }
       &:hover {
         opacity: .85;
